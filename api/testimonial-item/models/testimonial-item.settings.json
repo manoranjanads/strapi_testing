@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testimonial_items",
+  "info": {
+    "name": "Testimonial Item",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "model": "multi-language-item"
+    },
+    "title": {
+      "model": "multi-language-item"
+    },
+    "content": {
+      "model": "multi-language-item"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "short_description": {
+      "model": "multi-language-item"
+    },
+    "date": {
+      "type": "string"
+    }
+  }
+}

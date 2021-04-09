@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/facts-of-teas",
+      "handler": "facts-of-tea.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/facts-of-teas/count",
+      "handler": "facts-of-tea.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/facts-of-teas/:id",
+      "handler": "facts-of-tea.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/facts-of-teas",
+      "handler": "facts-of-tea.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/facts-of-teas/:id",
+      "handler": "facts-of-tea.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/facts-of-teas/:id",
+      "handler": "facts-of-tea.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/what-we-dos",
+      "handler": "what-we-do.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/what-we-dos/count",
+      "handler": "what-we-do.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/what-we-dos/:id",
+      "handler": "what-we-do.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/what-we-dos",
+      "handler": "what-we-do.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/what-we-dos/:id",
+      "handler": "what-we-do.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/what-we-dos/:id",
+      "handler": "what-we-do.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

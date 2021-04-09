@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/explore-dilmah-items",
+      "handler": "explore-dilmah-item.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/explore-dilmah-items/count",
+      "handler": "explore-dilmah-item.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/explore-dilmah-items/:id",
+      "handler": "explore-dilmah-item.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/explore-dilmah-items",
+      "handler": "explore-dilmah-item.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/explore-dilmah-items/:id",
+      "handler": "explore-dilmah-item.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/explore-dilmah-items/:id",
+      "handler": "explore-dilmah-item.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

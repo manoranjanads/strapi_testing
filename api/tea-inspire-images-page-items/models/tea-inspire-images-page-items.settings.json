@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tea_inspire_images_page_items",
+  "info": {
+    "name": "Tea Inspire Images Page Items",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "header_image_url": {
+      "type": "string"
+    },
+    "title": {
+      "model": "multi-language-item"
+    },
+    "photographers": {
+      "collection": "photographer"
+    },
+    "albums": {
+      "collection": "content-with-images"
+    },
+    "tea_inspired_me": {
+      "collection": "content-with-images"
+    },
+    "artists": {
+      "collection": "content-with-images"
+    }
+  }
+}

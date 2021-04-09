@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "careers",
+  "info": {
+    "name": "Careers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title_content": {
+      "model": "content"
+    },
+    "intern_content": {
+      "model": "content"
+    },
+    "vacancy_btn_text": {
+      "model": "multi-language-item"
+    },
+    "submit_cv_btn_text": {
+      "model": "multi-language-item"
+    },
+    "career_user_items": {
+      "collection": "career-user-item"
+    },
+    "sliders": {
+      "collection": "small-slider"
+    }
+  }
+}

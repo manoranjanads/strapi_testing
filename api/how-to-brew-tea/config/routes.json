@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/how-to-brew-teas",
+      "handler": "how-to-brew-tea.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/how-to-brew-teas/count",
+      "handler": "how-to-brew-tea.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/how-to-brew-teas/:id",
+      "handler": "how-to-brew-tea.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/how-to-brew-teas",
+      "handler": "how-to-brew-tea.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/how-to-brew-teas/:id",
+      "handler": "how-to-brew-tea.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/how-to-brew-teas/:id",
+      "handler": "how-to-brew-tea.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

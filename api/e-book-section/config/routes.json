@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/e-book-sections",
+      "handler": "e-book-section.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/e-book-sections/count",
+      "handler": "e-book-section.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/e-book-sections/:id",
+      "handler": "e-book-section.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/e-book-sections",
+      "handler": "e-book-section.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/e-book-sections/:id",
+      "handler": "e-book-section.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/e-book-sections/:id",
+      "handler": "e-book-section.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

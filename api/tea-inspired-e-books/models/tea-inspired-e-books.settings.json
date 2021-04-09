@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tea_inspired_e_books",
+  "info": {
+    "name": "Tea Inspired E Books",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "page_name": {
+      "type": "string",
+      "default": "Tea Inspired E Books"
+    },
+    "title": {
+      "model": "multi-language-item"
+    },
+    "header_image_url": {
+      "type": "string"
+    },
+    "e_book_sections": {
+      "collection": "e-book-section"
+    }
+  }
+}

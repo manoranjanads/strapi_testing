@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "media_page_items",
+  "info": {
+    "name": "Media Page Item",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "latest_news_cover": {
+      "model": "media-cover"
+    },
+    "events_cover": {
+      "model": "media-cover"
+    },
+    "tea_blog_cover": {
+      "model": "media-cover"
+    },
+    "dilmah_in_press_cover": {
+      "model": "media-cover"
+    }
+  }
+}

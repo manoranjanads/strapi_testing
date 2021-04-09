@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tea-in-all-senses",
+      "handler": "tea-in-all-senses.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tea-in-all-senses/count",
+      "handler": "tea-in-all-senses.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tea-in-all-senses/:id",
+      "handler": "tea-in-all-senses.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tea-in-all-senses",
+      "handler": "tea-in-all-senses.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tea-in-all-senses/:id",
+      "handler": "tea-in-all-senses.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tea-in-all-senses/:id",
+      "handler": "tea-in-all-senses.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

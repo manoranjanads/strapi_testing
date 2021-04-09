@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mjf-foundation-pages",
+      "handler": "mjf-foundation-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mjf-foundation-pages/count",
+      "handler": "mjf-foundation-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mjf-foundation-pages/:id",
+      "handler": "mjf-foundation-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mjf-foundation-pages",
+      "handler": "mjf-foundation-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mjf-foundation-pages/:id",
+      "handler": "mjf-foundation-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mjf-foundation-pages/:id",
+      "handler": "mjf-foundation-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

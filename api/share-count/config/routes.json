@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/share-counts",
+      "handler": "share-count.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/share-counts/count",
+      "handler": "share-count.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/share-counts/:id",
+      "handler": "share-count.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/share-counts",
+      "handler": "share-count.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/share-counts/:hash",
+      "handler": "share-count.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/share-counts/:id",
+      "handler": "share-count.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

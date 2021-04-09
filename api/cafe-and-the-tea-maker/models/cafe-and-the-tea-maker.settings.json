@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cafe_and_the_tea_makers",
+  "info": {
+    "name": "Cafe And The Tea Maker"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sliders": {
+      "collection": "small-slider"
+    },
+    "title": {
+      "model": "multi-language-item"
+    },
+    "content_1": {
+      "model": "content"
+    },
+    "content_2": {
+      "model": "content"
+    }
+  }
+}

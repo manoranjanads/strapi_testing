@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dilmah-stories",
+      "handler": "dilmah-story.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dilmah-stories/count",
+      "handler": "dilmah-story.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dilmah-stories/:id",
+      "handler": "dilmah-story.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dilmah-stories",
+      "handler": "dilmah-story.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dilmah-stories/:id",
+      "handler": "dilmah-story.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dilmah-stories/:id",
+      "handler": "dilmah-story.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

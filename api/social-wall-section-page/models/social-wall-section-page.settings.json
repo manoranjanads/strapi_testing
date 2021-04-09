@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "social_wall_section_pages",
+  "info": {
+    "name": "Social Wall Section Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "social_wall_items": {
+      "collection": "social-wall-item"
+    }
+  }
+}

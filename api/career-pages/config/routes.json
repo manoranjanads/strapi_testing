@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/career-pages",
+      "handler": "career-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/career-pages/count",
+      "handler": "career-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/career-pages/:id",
+      "handler": "career-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/career-pages",
+      "handler": "career-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/career-pages/:id",
+      "handler": "career-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/career-pages/:id",
+      "handler": "career-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dilma_global_timelines",
+  "info": {
+    "name": "Dilma Global Timeline",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "page_name": {
+      "type": "string",
+      "default": "dilmah global time line"
+    },
+    "time_line": {
+      "collection": "time-line-element"
+    }
+  }
+}

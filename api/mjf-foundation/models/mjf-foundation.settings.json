@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mjf_foundations",
+  "info": {
+    "name": "MJF Foundation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sliders": {
+      "collection": "small-slider"
+    },
+    "vision": {
+      "model": "content"
+    },
+    "sdg_s": {
+      "collection": "content"
+    },
+    "videos": {
+      "collection": "content"
+    },
+    "purpose": {
+      "model": "content"
+    },
+    "contributions": {
+      "collection": "content"
+    }
+  }
+}

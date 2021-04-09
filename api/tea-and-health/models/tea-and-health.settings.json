@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tea_and_healths",
+  "info": {
+    "name": "Tea And Health",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "contents": {
+      "collection": "content"
+    },
+    "title": {
+      "model": "multi-language-item"
+    },
+    "header_image_url": {
+      "type": "string"
+    },
+    "page_name": {
+      "type": "string",
+      "default": "tea and health"
+    }
+  }
+}

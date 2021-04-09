@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "e_book_sections",
+  "info": {
+    "name": "E Book Section"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "e_book_elements": {
+      "collection": "e-book-element"
+    },
+    "title": {
+      "model": "multi-language-item"
+    }
+  }
+}

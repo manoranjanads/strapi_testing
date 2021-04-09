@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "multi_language_items",
+  "info": {
+    "name": "Multi Language Item",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "text_en": {
+      "type": "text"
+    },
+    "text_du": {
+      "type": "text"
+    },
+    "text_uk": {
+      "type": "text"
+    },
+    "text_mo": {
+      "type": "text"
+    },
+    "text_ru": {
+      "type": "text"
+    },
+    "text_li": {
+      "type": "text"
+    },
+    "text_hu": {
+      "type": "text"
+    },
+    "text_ma": {
+      "type": "text"
+    },
+    "text_ch": {
+      "type": "text"
+    },
+    "text_th": {
+      "type": "text"
+    },
+    "text_sw": {
+      "type": "text"
+    },
+    "text_fr": {
+      "type": "text"
+    },
+    "text_ar": {
+      "type": "text"
+    },
+    "text_global": {
+      "type": "text"
+    }
+  }
+}

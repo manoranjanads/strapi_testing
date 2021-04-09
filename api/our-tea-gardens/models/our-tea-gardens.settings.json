@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "our_tea_gardens",
+  "info": {
+    "name": "Our Tea Gardens",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "tea_state_items": {
+      "collection": "tea-state-item"
+    },
+    "header": {
+      "model": "multi-language-item"
+    },
+    "description": {
+      "model": "multi-language-item"
+    },
+    "page_name": {
+      "type": "string",
+      "default": "our tea gardens"
+    }
+  }
+}

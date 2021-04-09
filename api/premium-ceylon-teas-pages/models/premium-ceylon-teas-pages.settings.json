@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "premium_ceylon_teas_pages",
+  "info": {
+    "name": "Premium Ceylon Tea Pages",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "page": {
+      "model": "premium-ceylon-tea"
+    }
+  }
+}

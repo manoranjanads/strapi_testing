@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testimonials",
+  "info": {
+    "name": "Testimonials",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "page_name": {
+      "type": "string",
+      "default": "testimonials page"
+    },
+    "testimonial_items": {
+      "collection": "testimonial-item"
+    }
+  }
+}

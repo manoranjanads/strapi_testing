@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dilmah_podcasts",
+  "info": {
+    "name": "Dilmah Podcast",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "page_name": {
+      "type": "string",
+      "default": "Dilmah Podcast"
+    },
+    "title": {
+      "model": "multi-language-item"
+    },
+    "header_image_url": {
+      "type": "string"
+    },
+    "feature_podcast": {
+      "model": "content"
+    },
+    "podcast_sections": {
+      "collection": "podcast-section"
+    }
+  }
+}

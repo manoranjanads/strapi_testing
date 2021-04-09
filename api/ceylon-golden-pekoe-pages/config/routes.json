@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ceylon-golden-pekoe-pages",
+      "handler": "ceylon-golden-pekoe-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ceylon-golden-pekoe-pages/count",
+      "handler": "ceylon-golden-pekoe-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ceylon-golden-pekoe-pages/:id",
+      "handler": "ceylon-golden-pekoe-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ceylon-golden-pekoe-pages",
+      "handler": "ceylon-golden-pekoe-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ceylon-golden-pekoe-pages/:id",
+      "handler": "ceylon-golden-pekoe-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ceylon-golden-pekoe-pages/:id",
+      "handler": "ceylon-golden-pekoe-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

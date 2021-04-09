@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hospitality-pages",
+      "handler": "hospitality-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hospitality-pages/count",
+      "handler": "hospitality-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hospitality-pages/:id",
+      "handler": "hospitality-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hospitality-pages",
+      "handler": "hospitality-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hospitality-pages/:id",
+      "handler": "hospitality-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hospitality-pages/:id",
+      "handler": "hospitality-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

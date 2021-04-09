@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/premium-ceylon-teas-pages",
+      "handler": "premium-ceylon-teas-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/premium-ceylon-teas-pages/count",
+      "handler": "premium-ceylon-teas-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/premium-ceylon-teas-pages/:id",
+      "handler": "premium-ceylon-teas-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/premium-ceylon-teas-pages",
+      "handler": "premium-ceylon-teas-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/premium-ceylon-teas-pages/:id",
+      "handler": "premium-ceylon-teas-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/premium-ceylon-teas-pages/:id",
+      "handler": "premium-ceylon-teas-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

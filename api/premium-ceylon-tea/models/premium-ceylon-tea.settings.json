@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "premium_ceylon_teas",
+  "info": {
+    "name": "Premium Ceylon Tea",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "model": "multi-language-item"
+    },
+    "header_image_url": {
+      "type": "string"
+    },
+    "content": {
+      "model": "content"
+    }
+  }
+}

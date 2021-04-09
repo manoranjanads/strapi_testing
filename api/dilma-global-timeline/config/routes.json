@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dilma-global-timelines",
+      "handler": "dilma-global-timeline.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dilma-global-timelines/count",
+      "handler": "dilma-global-timeline.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dilma-global-timelines/:id",
+      "handler": "dilma-global-timeline.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dilma-global-timelines",
+      "handler": "dilma-global-timeline.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dilma-global-timelines/:id",
+      "handler": "dilma-global-timeline.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dilma-global-timelines/:id",
+      "handler": "dilma-global-timeline.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

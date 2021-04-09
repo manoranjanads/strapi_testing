@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "content_with_images",
+  "info": {
+    "name": "Content With Images"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "cover_image_url": {
+      "type": "string"
+    },
+    "title": {
+      "model": "multi-language-item"
+    },
+    "short_description": {
+      "model": "multi-language-item"
+    },
+    "long_description": {
+      "model": "multi-language-item"
+    },
+    "images": {
+      "collection": "image-item"
+    }
+  }
+}

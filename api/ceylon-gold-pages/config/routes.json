@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ceylon-gold-pages",
+      "handler": "ceylon-gold-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ceylon-gold-pages/count",
+      "handler": "ceylon-gold-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ceylon-gold-pages/:id",
+      "handler": "ceylon-gold-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ceylon-gold-pages",
+      "handler": "ceylon-gold-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ceylon-gold-pages/:id",
+      "handler": "ceylon-gold-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ceylon-gold-pages/:id",
+      "handler": "ceylon-gold-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

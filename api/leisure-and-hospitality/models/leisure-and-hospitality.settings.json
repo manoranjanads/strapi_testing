@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leisure_and_hospitalities",
+  "info": {
+    "name": "Leisure And Hospitality",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "contents": {
+      "collection": "content"
+    },
+    "page_name": {
+      "type": "string",
+      "default": "leisure and hospitality"
+    }
+  }
+}

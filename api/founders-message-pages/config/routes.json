@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/founders-message-pages",
+      "handler": "founders-message-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/founders-message-pages/count",
+      "handler": "founders-message-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/founders-message-pages/:id",
+      "handler": "founders-message-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/founders-message-pages",
+      "handler": "founders-message-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/founders-message-pages/:id",
+      "handler": "founders-message-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/founders-message-pages/:id",
+      "handler": "founders-message-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

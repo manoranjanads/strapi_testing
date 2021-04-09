@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dilmah_conservations",
+  "info": {
+    "name": "Dilmah Conservation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sliders": {
+      "collection": "small-slider"
+    },
+    "our_work": {
+      "collection": "content"
+    },
+    "sustainability_components": {
+      "collection": "content"
+    },
+    "title_content": {
+      "model": "content"
+    }
+  }
+}

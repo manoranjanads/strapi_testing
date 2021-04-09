@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tea-inspire-images-page-items",
+      "handler": "tea-inspire-images-page-items.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tea-inspire-images-page-items/count",
+      "handler": "tea-inspire-images-page-items.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tea-inspire-images-page-items/:id",
+      "handler": "tea-inspire-images-page-items.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tea-inspire-images-page-items",
+      "handler": "tea-inspire-images-page-items.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tea-inspire-images-page-items/:id",
+      "handler": "tea-inspire-images-page-items.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tea-inspire-images-page-items/:id",
+      "handler": "tea-inspire-images-page-items.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

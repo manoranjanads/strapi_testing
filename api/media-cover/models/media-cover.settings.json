@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "media_covers",
+  "info": {
+    "name": "Media Cover",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "image_url": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "title": {
+      "model": "multi-language-item"
+    },
+    "header": {
+      "model": "multi-language-item"
+    },
+    "description": {
+      "model": "multi-language-item"
+    }
+  }
+}

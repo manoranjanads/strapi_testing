@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ceylon_green_teas",
+  "info": {
+    "name": "Ceylon Green Tea"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "model": "multi-language-item"
+    },
+    "header_image_url": {
+      "type": "string"
+    },
+    "content_1": {
+      "model": "content"
+    }
+  }
+}

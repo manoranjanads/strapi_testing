@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "image_items",
+  "info": {
+    "name": "Image Item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "image_url": {
+      "type": "string"
+    }
+  }
+}

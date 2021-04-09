@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_us_components",
+  "info": {
+    "name": "Contact Us Component",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "contact_no_1": {
+      "type": "string"
+    },
+    "contact_no_2": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "address": {
+      "model": "multi-language-item"
+    }
+  }
+}

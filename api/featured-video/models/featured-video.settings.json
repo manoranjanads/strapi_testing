@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "featured_videos",
+  "info": {
+    "name": "Featured Video"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "video_url": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "header": {
+      "model": "multi-language-item"
+    },
+    "description": {
+      "model": "multi-language-item"
+    }
+  }
+}

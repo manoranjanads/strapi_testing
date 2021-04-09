@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "facts_of_tea_pages",
+  "info": {
+    "name": "Facts Of Tea Pages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "page": {
+      "model": "facts-of-tea"
+    }
+  }
+}

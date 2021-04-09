@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "certificates_and_awards",
+  "info": {
+    "name": "Certificates And Awards",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "certificates": {
+      "collection": "certificate-and-award-section"
+    },
+    "awards": {
+      "collection": "certificate-and-award-section"
+    },
+    "header": {
+      "model": "multi-language-item"
+    },
+    "description": {
+      "model": "multi-language-item"
+    },
+    "award_btn_text": {
+      "model": "multi-language-item"
+    },
+    "certificate_btn_text": {
+      "model": "multi-language-item"
+    },
+    "page_name": {
+      "type": "string",
+      "default": "certificates and awards"
+    }
+  }
+}

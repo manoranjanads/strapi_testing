@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/how-to-brew-tea-pages",
+      "handler": "how-to-brew-tea-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/how-to-brew-tea-pages/count",
+      "handler": "how-to-brew-tea-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/how-to-brew-tea-pages/:id",
+      "handler": "how-to-brew-tea-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/how-to-brew-tea-pages",
+      "handler": "how-to-brew-tea-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/how-to-brew-tea-pages/:id",
+      "handler": "how-to-brew-tea-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/how-to-brew-tea-pages/:id",
+      "handler": "how-to-brew-tea-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

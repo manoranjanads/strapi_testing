@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mixologist_and_the_tea_maker_pages",
+  "info": {
+    "name": "Mixologist And The Tea Maker Pages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "page": {
+      "model": "mixologist-and-the-tea-maker"
+    }
+  }
+}

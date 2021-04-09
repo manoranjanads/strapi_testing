@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sustainability-pages",
+      "handler": "sustainability-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sustainability-pages/count",
+      "handler": "sustainability-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sustainability-pages/:id",
+      "handler": "sustainability-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sustainability-pages",
+      "handler": "sustainability-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sustainability-pages/:id",
+      "handler": "sustainability-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sustainability-pages/:id",
+      "handler": "sustainability-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "media_images_page_items",
+  "info": {
+    "name": "Media Images Page Item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sliders": {
+      "collection": "small-slider"
+    }
+  }
+}

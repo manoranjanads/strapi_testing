@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "multi_country_items",
+  "info": {
+    "name": "Multi Country Item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "url_lk": {
+      "type": "string"
+    },
+    "url_uk": {
+      "type": "string"
+    }
+  }
+}

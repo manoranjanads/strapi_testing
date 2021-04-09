@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_content_sections",
+  "info": {
+    "name": "Sub Content Section"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "has_header": {
+      "type": "boolean",
+      "default": false
+    },
+    "header": {
+      "model": "multi-language-item"
+    },
+    "contents": {
+      "collection": "multi-language-item"
+    },
+    "image_url": {
+      "type": "string"
+    }
+  }
+}

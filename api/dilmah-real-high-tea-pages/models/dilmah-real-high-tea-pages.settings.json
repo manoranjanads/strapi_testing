@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dilmah_real_high_tea_pages",
+  "info": {
+    "name": "Dilmah Real High Tea Pages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "page": {
+      "model": "dilmah-real-high-tea"
+    }
+  }
+}

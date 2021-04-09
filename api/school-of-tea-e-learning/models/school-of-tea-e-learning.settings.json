@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "school_of_tea_e_learnings",
+  "info": {
+    "name": "School Of Tea E-Learning",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "contents": {
+      "collection": "content"
+    },
+    "title": {
+      "model": "multi-language-item"
+    },
+    "header_image_url": {
+      "type": "string"
+    },
+    "page_name": {
+      "type": "string",
+      "default": "school of tea e learning"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hospitalities",
+      "handler": "hospitality.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hospitalities/count",
+      "handler": "hospitality.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hospitalities/:id",
+      "handler": "hospitality.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hospitalities",
+      "handler": "hospitality.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hospitalities/:id",
+      "handler": "hospitality.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hospitalities/:id",
+      "handler": "hospitality.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

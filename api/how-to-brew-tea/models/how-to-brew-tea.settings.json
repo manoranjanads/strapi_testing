@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "how_to_brew_teas",
+  "info": {
+    "name": "How To Brew Tea",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "model": "multi-language-item"
+    },
+    "header_image_url": {
+      "type": "string"
+    },
+    "content": {
+      "model": "content"
+    },
+    "dynamic_content_sections": {
+      "collection": "dynamic-content-section"
+    },
+    "video_url": {
+      "type": "string"
+    }
+  }
+}

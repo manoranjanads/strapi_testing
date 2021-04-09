@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tea-in-all-senses-pages",
+      "handler": "tea-in-all-senses-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tea-in-all-senses-pages/count",
+      "handler": "tea-in-all-senses-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tea-in-all-senses-pages/:id",
+      "handler": "tea-in-all-senses-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tea-in-all-senses-pages",
+      "handler": "tea-in-all-senses-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tea-in-all-senses-pages/:id",
+      "handler": "tea-in-all-senses-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tea-in-all-senses-pages/:id",
+      "handler": "tea-in-all-senses-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

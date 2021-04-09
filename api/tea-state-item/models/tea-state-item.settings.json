@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tea_state_items",
+  "info": {
+    "name": "Tea State Item",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "high",
+        "mid",
+        "low"
+      ]
+    },
+    "video_link": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "name": {
+      "model": "multi-language-item"
+    },
+    "description": {
+      "model": "multi-language-item"
+    },
+    "video_thumbnail_url": {
+      "type": "string"
+    },
+    "images": {
+      "collection": "image-item"
+    },
+    "cover_image_url": {
+      "type": "string"
+    }
+  }
+}

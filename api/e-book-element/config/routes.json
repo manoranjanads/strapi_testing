@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/e-book-elements",
+      "handler": "e-book-element.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/e-book-elements/count",
+      "handler": "e-book-element.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/e-book-elements/:id",
+      "handler": "e-book-element.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/e-book-elements",
+      "handler": "e-book-element.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/e-book-elements/:id",
+      "handler": "e-book-element.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/e-book-elements/:id",
+      "handler": "e-book-element.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

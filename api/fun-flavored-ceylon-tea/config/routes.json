@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fun-flavored-ceylon-teas",
+      "handler": "fun-flavored-ceylon-tea.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fun-flavored-ceylon-teas/count",
+      "handler": "fun-flavored-ceylon-tea.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fun-flavored-ceylon-teas/:id",
+      "handler": "fun-flavored-ceylon-tea.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fun-flavored-ceylon-teas",
+      "handler": "fun-flavored-ceylon-tea.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fun-flavored-ceylon-teas/:id",
+      "handler": "fun-flavored-ceylon-tea.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fun-flavored-ceylon-teas/:id",
+      "handler": "fun-flavored-ceylon-tea.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

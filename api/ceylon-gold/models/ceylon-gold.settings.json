@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ceylon_golds",
+  "info": {
+    "name": "Ceylon Gold",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "model": "multi-language-item"
+    },
+    "content_1": {
+      "model": "content"
+    },
+    "header_image_url": {
+      "type": "string"
+    }
+  }
+}

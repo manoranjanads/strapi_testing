@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sustainabilities",
+      "handler": "sustainability.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sustainabilities/count",
+      "handler": "sustainability.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sustainabilities/:id",
+      "handler": "sustainability.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sustainabilities",
+      "handler": "sustainability.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sustainabilities/:id",
+      "handler": "sustainability.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sustainabilities/:id",
+      "handler": "sustainability.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

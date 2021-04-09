@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "how_to_brew_tea_pages",
+  "info": {
+    "name": "How To Brew Tea Pages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "page": {
+      "model": "how-to-brew-tea"
+    }
+  }
+}

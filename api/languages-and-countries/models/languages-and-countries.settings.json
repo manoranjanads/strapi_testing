@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "languages_and_countries",
+  "info": {
+    "name": "Languages And Countries"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "test": {
+      "type": "string"
+    }
+  }
+}

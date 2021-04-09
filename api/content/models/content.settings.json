@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contents",
+  "info": {
+    "name": "Content",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "has_header": {
+      "type": "boolean",
+      "default": false
+    },
+    "has_link": {
+      "type": "boolean",
+      "default": false
+    },
+    "link": {
+      "type": "string"
+    },
+    "header": {
+      "model": "multi-language-item"
+    },
+    "content": {
+      "model": "multi-language-item"
+    },
+    "link_text": {
+      "model": "multi-language-item"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "has_sub_heading": {
+      "type": "boolean",
+      "default": false
+    },
+    "sub_heading": {
+      "model": "multi-language-item"
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "has_video": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

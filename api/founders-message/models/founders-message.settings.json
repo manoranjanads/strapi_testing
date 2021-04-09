@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "founders_messages",
+  "info": {
+    "name": "Founders Message",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sliders": {
+      "collection": "small-slider"
+    },
+    "contents": {
+      "collection": "content"
+    },
+    "founder_name": {
+      "model": "multi-language-item"
+    },
+    "page_name": {
+      "type": "string",
+      "default": "founders message"
+    },
+    "title_content": {
+      "model": "content"
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "signature_url": {
+      "type": "string"
+    }
+  }
+}

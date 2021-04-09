@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "our_tea_gardens_pages",
+  "info": {
+    "name": "Our Tea Gardens Pages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "page": {
+      "model": "our-tea-gardens"
+    }
+  }
+}

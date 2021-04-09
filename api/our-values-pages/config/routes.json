@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/our-values-pages",
+      "handler": "our-values-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/our-values-pages/count",
+      "handler": "our-values-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/our-values-pages/:id",
+      "handler": "our-values-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/our-values-pages",
+      "handler": "our-values-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/our-values-pages/:id",
+      "handler": "our-values-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/our-values-pages/:id",
+      "handler": "our-values-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

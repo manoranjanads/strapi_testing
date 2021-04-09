@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dilmah_story_pages",
+  "info": {
+    "name": "Dilmah Story Pages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "page": {
+      "model": "dilmah-story"
+    }
+  }
+}

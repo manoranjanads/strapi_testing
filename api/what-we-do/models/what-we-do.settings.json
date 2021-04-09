@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "what_we_dos",
+  "info": {
+    "name": "What We Do",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "contents": {
+      "collection": "content"
+    },
+    "page_name": {
+      "type": "string",
+      "default": "what we do"
+    }
+  }
+}

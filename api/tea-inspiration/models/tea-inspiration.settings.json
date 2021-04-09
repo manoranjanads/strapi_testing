@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tea_inspiration_s",
+  "info": {
+    "name": "Tea Inspiration ",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sliders": {
+      "collection": "small-slider"
+    },
+    "title": {
+      "model": "multi-language-item"
+    },
+    "content_1": {
+      "model": "content"
+    },
+    "content_2": {
+      "model": "content"
+    },
+    "show_us_link": {
+      "type": "string"
+    }
+  }
+}

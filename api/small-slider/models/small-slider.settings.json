@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "small_sliders",
+  "info": {
+    "name": "Small Slider",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "slider_has_video": {
+      "type": "boolean",
+      "default": false
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "header": {
+      "model": "multi-language-item"
+    },
+    "image_url": {
+      "type": "string"
+    }
+  }
+}

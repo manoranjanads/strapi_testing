@@ -1,0 +1,148 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dmc-apis/featured_stories",
+      "handler": "dmc-api.getFeaturedStories",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dmc-apis/news",
+      "handler": "dmc-api.getNews",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dmc-apis/press",
+      "handler": "dmc-api.getPress",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dmc-apis/events",
+      "handler": "dmc-api.getEvents",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dmc-apis/images",
+      "handler": "dmc-api.getImages",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dmc-apis/audio",
+      "handler": "dmc-api.getAudio",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dmc-apis/video",
+      "handler": "dmc-api.getVideo",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dmc-apis/tea_ranges",
+      "handler": "dmc-api.getTeaRanges",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dmc-apis/gift_of_teas",
+      "handler": "dmc-api.getGiftOfTeas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dmc-apis/products",
+      "handler": "dmc-api.getProducts",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dmc-apis/natural_infusions",
+      "handler": "dmc-api.getNatInfusions",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dmc-apis/teamakers_private_reserve",
+      "handler": "dmc-api.getTeamakersPrivateReserve",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dmc-apis/productsAndInfusions",
+      "handler": "dmc-api.getProductsAndInfusions",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dmc-apis/count",
+      "handler": "dmc-api.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dmc-apis/:id",
+      "handler": "dmc-api.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dmc-apis",
+      "handler": "dmc-api.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dmc-apis/:id",
+      "handler": "dmc-api.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dmc-apis/:id",
+      "handler": "dmc-api.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

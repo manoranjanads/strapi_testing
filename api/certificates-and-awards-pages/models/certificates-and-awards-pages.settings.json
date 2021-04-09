@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "certificates_and_awards_pages",
+  "info": {
+    "name": "Certificates And Awards Pages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "page": {
+      "model": "certificates-and-awards"
+    }
+  }
+}

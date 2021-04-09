@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dilmah_tea_blogs",
+  "info": {
+    "name": "Dilmah Tea Blog",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "image_url": {
+      "type": "string"
+    },
+    "header": {
+      "model": "multi-language-item"
+    },
+    "long_description": {
+      "model": "multi-language-item"
+    },
+    "date": {
+      "type": "string"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": true
+    },
+    "short_description": {
+      "model": "multi-language-item"
+    },
+    "tea_blog_category": {
+      "model": "tea-blog-category"
+    },
+    "author": {
+      "model": "multi-language-item"
+    },
+    "share_count": {
+      "type": "integer"
+    }
+  }
+}

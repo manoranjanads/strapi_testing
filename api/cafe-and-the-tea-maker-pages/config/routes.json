@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cafe-and-the-tea-maker-pages",
+      "handler": "cafe-and-the-tea-maker-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cafe-and-the-tea-maker-pages/count",
+      "handler": "cafe-and-the-tea-maker-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cafe-and-the-tea-maker-pages/:id",
+      "handler": "cafe-and-the-tea-maker-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cafe-and-the-tea-maker-pages",
+      "handler": "cafe-and-the-tea-maker-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cafe-and-the-tea-maker-pages/:id",
+      "handler": "cafe-and-the-tea-maker-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cafe-and-the-tea-maker-pages/:id",
+      "handler": "cafe-and-the-tea-maker-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

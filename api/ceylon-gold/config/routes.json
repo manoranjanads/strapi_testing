@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ceylon-golds",
+      "handler": "ceylon-gold.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ceylon-golds/count",
+      "handler": "ceylon-gold.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ceylon-golds/:id",
+      "handler": "ceylon-gold.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ceylon-golds",
+      "handler": "ceylon-gold.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ceylon-golds/:id",
+      "handler": "ceylon-gold.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ceylon-golds/:id",
+      "handler": "ceylon-gold.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

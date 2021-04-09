@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tea-blog-page-items",
+      "handler": "tea-blog-page-item.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tea-blog-page-items/count",
+      "handler": "tea-blog-page-item.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tea-blog-page-items/:id",
+      "handler": "tea-blog-page-item.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tea-blog-page-items",
+      "handler": "tea-blog-page-item.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tea-blog-page-items/:id",
+      "handler": "tea-blog-page-item.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tea-blog-page-items/:id",
+      "handler": "tea-blog-page-item.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

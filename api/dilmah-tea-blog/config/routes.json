@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dilmah-tea-blogs",
+      "handler": "dilmah-tea-blog.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dilmah-tea-blogs/count",
+      "handler": "dilmah-tea-blog.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dilmah-tea-blogs/:id",
+      "handler": "dilmah-tea-blog.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dilmah-tea-blogs",
+      "handler": "dilmah-tea-blog.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dilmah-tea-blogs/:id",
+      "handler": "dilmah-tea-blog.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dilmah-tea-blogs/:id",
+      "handler": "dilmah-tea-blog.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dilmah-tea-blogs/share/:id",
+      "handler": "dilmah-tea-blog.share",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

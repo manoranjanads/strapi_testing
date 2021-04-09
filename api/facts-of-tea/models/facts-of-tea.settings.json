@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "facts_of_teas",
+  "info": {
+    "name": "Facts Of Tea",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "page_name": {
+      "type": "string",
+      "default": "Facts Of Tea"
+    },
+    "title": {
+      "model": "multi-language-item"
+    },
+    "header_image_url": {
+      "type": "string"
+    },
+    "contents": {
+      "collection": "content"
+    }
+  }
+}

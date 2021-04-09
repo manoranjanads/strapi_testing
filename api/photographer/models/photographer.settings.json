@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "photographers",
+  "info": {
+    "name": "Photographer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "model": "multi-language-item"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "description": {
+      "model": "multi-language-item"
+    },
+    "images": {
+      "collection": "image-item"
+    }
+  }
+}

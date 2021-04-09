@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ceylon_golden_pekoe_pages",
+  "info": {
+    "name": "Ceylon Golden Pekoe Pages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "page": {
+      "model": "ceylon-golden-pekoe"
+    }
+  }
+}

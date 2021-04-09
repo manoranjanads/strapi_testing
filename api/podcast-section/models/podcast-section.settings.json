@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "podcast_sections",
+  "info": {
+    "name": "Podcast Section"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "model": "multi-language-item"
+    },
+    "contents": {
+      "collection": "content"
+    }
+  }
+}

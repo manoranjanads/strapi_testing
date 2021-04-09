@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "career_user_items",
+  "info": {
+    "name": "Career User Item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "image_url": {
+      "type": "string"
+    },
+    "name": {
+      "model": "multi-language-item"
+    },
+    "description": {
+      "model": "multi-language-item"
+    }
+  }
+}

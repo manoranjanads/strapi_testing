@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ceylon-green-teas",
+      "handler": "ceylon-green-tea.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ceylon-green-teas/count",
+      "handler": "ceylon-green-tea.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ceylon-green-teas/:id",
+      "handler": "ceylon-green-tea.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ceylon-green-teas",
+      "handler": "ceylon-green-tea.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ceylon-green-teas/:id",
+      "handler": "ceylon-green-tea.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ceylon-green-teas/:id",
+      "handler": "ceylon-green-tea.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

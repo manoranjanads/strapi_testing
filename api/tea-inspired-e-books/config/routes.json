@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tea-inspired-e-books",
+      "handler": "tea-inspired-e-books.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tea-inspired-e-books/count",
+      "handler": "tea-inspired-e-books.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tea-inspired-e-books/:id",
+      "handler": "tea-inspired-e-books.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tea-inspired-e-books",
+      "handler": "tea-inspired-e-books.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tea-inspired-e-books/:id",
+      "handler": "tea-inspired-e-books.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tea-inspired-e-books/:id",
+      "handler": "tea-inspired-e-books.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

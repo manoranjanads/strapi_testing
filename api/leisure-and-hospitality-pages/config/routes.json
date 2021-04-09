@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/leisure-and-hospitality-pages",
+      "handler": "leisure-and-hospitality-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/leisure-and-hospitality-pages/count",
+      "handler": "leisure-and-hospitality-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/leisure-and-hospitality-pages/:id",
+      "handler": "leisure-and-hospitality-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/leisure-and-hospitality-pages",
+      "handler": "leisure-and-hospitality-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/leisure-and-hospitality-pages/:id",
+      "handler": "leisure-and-hospitality-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/leisure-and-hospitality-pages/:id",
+      "handler": "leisure-and-hospitality-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

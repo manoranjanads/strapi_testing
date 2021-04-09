@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hospitality_pages",
+  "info": {
+    "name": "Hospitality Pages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "page": {
+      "model": "hospitality"
+    }
+  }
+}

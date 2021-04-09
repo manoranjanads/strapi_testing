@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "social_wall_items",
+  "info": {
+    "name": "Social Wall Item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "image_url": {
+      "type": "string"
+    },
+    "icon_type": {
+      "type": "string"
+    },
+    "description": {
+      "model": "multi-language-item"
+    }
+  }
+}

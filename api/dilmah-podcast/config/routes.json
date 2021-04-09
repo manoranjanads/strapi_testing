@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dilmah-podcasts",
+      "handler": "dilmah-podcast.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dilmah-podcasts/count",
+      "handler": "dilmah-podcast.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dilmah-podcasts/:id",
+      "handler": "dilmah-podcast.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dilmah-podcasts",
+      "handler": "dilmah-podcast.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dilmah-podcasts/:id",
+      "handler": "dilmah-podcast.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dilmah-podcasts/:id",
+      "handler": "dilmah-podcast.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

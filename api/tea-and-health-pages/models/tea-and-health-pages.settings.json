@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tea_and_health_pages",
+  "info": {
+    "name": "Tea And Health Pages",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "page": {
+      "model": "tea-and-health"
+    }
+  }
+}

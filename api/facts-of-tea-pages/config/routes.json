@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/facts-of-tea-pages",
+      "handler": "facts-of-tea-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/facts-of-tea-pages/count",
+      "handler": "facts-of-tea-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/facts-of-tea-pages/:id",
+      "handler": "facts-of-tea-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/facts-of-tea-pages",
+      "handler": "facts-of-tea-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/facts-of-tea-pages/:id",
+      "handler": "facts-of-tea-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/facts-of-tea-pages/:id",
+      "handler": "facts-of-tea-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dilmah_stories",
+  "info": {
+    "name": "Dilmah Story",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "contents": {
+      "collection": "content"
+    },
+    "page_name": {
+      "type": "string",
+      "default": "dilmah story"
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "title_content": {
+      "model": "content"
+    },
+    "test": {
+      "type": "string"
+    }
+  }
+}

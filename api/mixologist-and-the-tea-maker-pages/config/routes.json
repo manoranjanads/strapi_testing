@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mixologist-and-the-tea-maker-pages",
+      "handler": "mixologist-and-the-tea-maker-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mixologist-and-the-tea-maker-pages/count",
+      "handler": "mixologist-and-the-tea-maker-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mixologist-and-the-tea-maker-pages/:id",
+      "handler": "mixologist-and-the-tea-maker-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mixologist-and-the-tea-maker-pages",
+      "handler": "mixologist-and-the-tea-maker-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mixologist-and-the-tea-maker-pages/:id",
+      "handler": "mixologist-and-the-tea-maker-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mixologist-and-the-tea-maker-pages/:id",
+      "handler": "mixologist-and-the-tea-maker-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

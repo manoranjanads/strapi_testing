@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hospitalities",
+  "info": {
+    "name": "Hospitality"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sliders": {
+      "collection": "small-slider"
+    },
+    "title": {
+      "model": "multi-language-item"
+    },
+    "invitation": {
+      "model": "content"
+    },
+    "mid_title": {
+      "model": "content"
+    },
+    "values": {
+      "collection": "content"
+    },
+    "mid_quote": {
+      "model": "content"
+    },
+    "hospitality": {
+      "collection": "content"
+    },
+    "end_quote_with_link": {
+      "model": "content"
+    }
+  }
+}

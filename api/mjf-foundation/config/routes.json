@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mjf-foundations",
+      "handler": "mjf-foundation.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mjf-foundations/count",
+      "handler": "mjf-foundation.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mjf-foundations/:id",
+      "handler": "mjf-foundation.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mjf-foundations",
+      "handler": "mjf-foundation.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mjf-foundations/:id",
+      "handler": "mjf-foundation.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mjf-foundations/:id",
+      "handler": "mjf-foundation.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

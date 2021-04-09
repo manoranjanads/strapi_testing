@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "certificate_and_award_sections",
+  "info": {
+    "name": "Certificate And Award Section",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "certificate_or_awards": {
+      "collection": "certificate-or-award"
+    },
+    "header": {
+      "model": "multi-language-item"
+    },
+    "description": {
+      "model": "multi-language-item"
+    }
+  }
+}

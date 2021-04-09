@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "our_values",
+  "info": {
+    "name": "Our Values",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sliders": {
+      "collection": "small-slider"
+    },
+    "contents": {
+      "collection": "content"
+    },
+    "page_name": {
+      "type": "string",
+      "default": "our values"
+    },
+    "title_content": {
+      "model": "content"
+    },
+    "video_content": {
+      "model": "content"
+    }
+  }
+}

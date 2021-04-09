@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "explore_dilmah_items",
+  "info": {
+    "name": "Explore Dilmah Item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "image_url": {
+      "type": "string"
+    },
+    "title": {
+      "model": "multi-language-item"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

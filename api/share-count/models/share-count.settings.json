@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "share_counts",
+  "info": {
+    "name": "Share Count"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hash": {
+      "type": "string"
+    },
+    "share_count": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

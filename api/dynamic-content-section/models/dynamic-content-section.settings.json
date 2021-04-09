@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dynamic_content_sections",
+  "info": {
+    "name": "Dynamic Content Section",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "has_header": {
+      "type": "boolean",
+      "default": false
+    },
+    "headers": {
+      "collection": "multi-language-item"
+    },
+    "content": {
+      "model": "multi-language-item"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "has_link": {
+      "type": "boolean",
+      "default": false
+    },
+    "link_text": {
+      "model": "multi-language-item"
+    },
+    "link": {
+      "type": "string"
+    },
+    "sub_contents": {
+      "collection": "sub-content-section"
+    },
+    "type": {
+      "type": "string"
+    },
+    "rule_number": {
+      "type": "integer"
+    }
+  }
+}

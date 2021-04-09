@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ceylon_gold_pages",
+  "info": {
+    "name": "Ceylon Gold Pages",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "page": {
+      "model": "ceylon-gold"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/testimonial-items",
+      "handler": "testimonial-item.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/testimonial-items/count",
+      "handler": "testimonial-item.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/testimonial-items/:id",
+      "handler": "testimonial-item.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/testimonial-items",
+      "handler": "testimonial-item.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/testimonial-items/:id",
+      "handler": "testimonial-item.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/testimonial-items/:id",
+      "handler": "testimonial-item.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

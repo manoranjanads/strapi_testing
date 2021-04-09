@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tea_blog_page_items",
+  "info": {
+    "name": "Tea Blog Page Item",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "dilmah_tea_blogs": {
+      "collection": "dilmah-tea-blog"
+    },
+    "header_tea_blog": {
+      "model": "dilmah-tea-blog"
+    }
+  }
+}

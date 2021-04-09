@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/social-wall-section-pages",
+      "handler": "social-wall-section-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/social-wall-section-pages/count",
+      "handler": "social-wall-section-page.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/social-wall-section-pages/:id",
+      "handler": "social-wall-section-page.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/social-wall-section-pages",
+      "handler": "social-wall-section-page.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/social-wall-section-pages/:id",
+      "handler": "social-wall-section-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/social-wall-section-pages/:id",
+      "handler": "social-wall-section-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

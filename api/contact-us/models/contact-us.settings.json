@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_uses",
+  "info": {
+    "name": "Contact Us",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "header_image_url": {
+      "type": "string"
+    },
+    "header": {
+      "model": "multi-language-item"
+    },
+    "content": {
+      "model": "content"
+    },
+    "contact_details": {
+      "model": "contact-us-component"
+    },
+    "agreement_text": {
+      "model": "multi-language-item"
+    }
+  }
+}

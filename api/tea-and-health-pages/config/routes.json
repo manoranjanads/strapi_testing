@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tea-and-health-pages",
+      "handler": "tea-and-health-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tea-and-health-pages/count",
+      "handler": "tea-and-health-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tea-and-health-pages/:id",
+      "handler": "tea-and-health-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tea-and-health-pages",
+      "handler": "tea-and-health-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tea-and-health-pages/:id",
+      "handler": "tea-and-health-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tea-and-health-pages/:id",
+      "handler": "tea-and-health-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

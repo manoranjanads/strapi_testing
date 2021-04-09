@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/certificates-and-awards-pages",
+      "handler": "certificates-and-awards-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/certificates-and-awards-pages/count",
+      "handler": "certificates-and-awards-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/certificates-and-awards-pages/:id",
+      "handler": "certificates-and-awards-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/certificates-and-awards-pages",
+      "handler": "certificates-and-awards-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/certificates-and-awards-pages/:id",
+      "handler": "certificates-and-awards-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/certificates-and-awards-pages/:id",
+      "handler": "certificates-and-awards-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

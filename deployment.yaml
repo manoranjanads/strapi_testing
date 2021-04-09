@@ -1,0 +1,42 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: website-strapi
+  labels:
+    app: website-strapi
+spec:
+  selector:
+    app: website-strapi
+  ports:
+    - port: 8080
+      targetPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: website-strapi
+spec:
+  selector:
+    matchLabels:
+      app: website-strapi
+  strategy:
+    type: RollingUpdate
+  revisionHistoryLimit: 15
+  template:
+    metadata:
+      name: website-strapi
+      labels:
+        app: website-strapi
+    spec:
+      containers:
+      - name: website-strapi
+        image: {{CONTAINER_IMAGE}}
+        envFrom:
+        - secretRef:
+            name: website-strapi-env
+        ports:
+          - containerPort: 8080
+        resources:
+          requests:
+            cpu: 20m
+            memory: 100Mi

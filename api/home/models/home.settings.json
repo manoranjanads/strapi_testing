@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homes",
+  "info": {
+    "name": "Home",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sliders": {
+      "collection": "small-slider"
+    },
+    "contents": {
+      "collection": "content"
+    },
+    "explore_dilmah_items": {
+      "collection": "explore-dilmah-item"
+    },
+    "featured_videos": {
+      "collection": "featured-video"
+    },
+    "configurable_video_url": {
+      "type": "string"
+    }
+  }
+}

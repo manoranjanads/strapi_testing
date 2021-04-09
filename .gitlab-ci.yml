@@ -1,0 +1,106 @@
+variables:
+  DOCKER_DRIVER: overlay
+  CONTAINER_IMAGE: $CI_REGISTRY_IMAGE
+  CONTAINER_IMAGE_TAG: $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_NAME
+stages:
+  - build
+  - deploy
+
+docker-build-dev:
+  image: docker:stable
+  services:
+    - docker:dind
+  stage: build
+  script:
+  - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  - docker pull $CONTAINER_IMAGE:dev || true
+  - docker build --cache-from $CONTAINER_IMAGE:dev -t $CONTAINER_IMAGE:dev .
+  - docker tag $CONTAINER_IMAGE:dev $CONTAINER_IMAGE:dev${CI_PIPELINE_IID}
+  - docker push $CONTAINER_IMAGE:dev
+  - docker push $CONTAINER_IMAGE:dev${CI_PIPELINE_IID}
+  only:
+  - development
+
+docker-build-rel:
+  image: docker:stable
+  services:
+    - docker:dind
+  stage: build
+  script:
+  - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  - docker pull $CONTAINER_IMAGE:rel || true
+  - docker build --cache-from $CONTAINER_IMAGE:rel -t $CONTAINER_IMAGE:rel .
+  - docker tag $CONTAINER_IMAGE:rel $CONTAINER_IMAGE:rel${CI_PIPELINE_IID}
+  - docker push $CONTAINER_IMAGE:rel
+  - docker push $CONTAINER_IMAGE:rel${CI_PIPELINE_IID}
+  only:
+  - master
+
+k8s-deploy-rel:
+  stage: deploy
+  image:
+    name: bitnami/kubectl
+    entrypoint: [""]
+  script:
+    - echo "$KUBECONFIG_STAGING" > kubeconfig-staging.yaml
+    - export KUBECONFIG=$PWD/kubeconfig-staging.yaml
+    - sed -i "s#{{CONTAINER_IMAGE}}#$CONTAINER_IMAGE:rel$CI_PIPELINE_IID#g" deployment.yaml
+    - kubectl apply -f deployment.yaml -n $KUBE_NAMESPACE
+  environment:
+    name: dtl-staging
+  only:
+  - master
+
+k8s-deploy-prd:
+  stage: deploy
+  image:
+    name: bitnami/kubectl
+    entrypoint: [""]
+  script:
+    - echo "$KUBECONFIG_PROD" > kubeconfig-prod.yaml
+    - export KUBECONFIG=$PWD/kubeconfig-prod.yaml
+    - sed -i "s#{{CONTAINER_IMAGE}}#$CONTAINER_IMAGE:rel$CI_PIPELINE_IID#g" deployment.yaml
+    - kubectl apply -f deployment.yaml
+  environment:
+    name: dtl-prd
+  only:
+  - master
+  when: manual
+
+
+docker-build-prd-tag:
+  image: docker:stable
+  services:
+    - docker:dind
+  stage: build
+  script:
+  - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  - docker pull $CONTAINER_IMAGE:prd-image- || true
+  - docker build --cache-from $CONTAINER_IMAGE:prd-image- -t $CONTAINER_IMAGE:prd-image- .
+  - docker tag $CONTAINER_IMAGE:prd-image- $CONTAINER_IMAGE:prd-image-${CI_PIPELINE_IID}
+  - docker tag $CONTAINER_IMAGE:prd-image- $CONTAINER_IMAGE:prd-image-${CI_COMMIT_REF_NAME}
+  - docker push $CONTAINER_IMAGE:prd-image-${CI_PIPELINE_IID}
+  - docker push $CONTAINER_IMAGE:prd-image-${CI_COMMIT_REF_NAME}
+
+  only:
+  - tags
+
+k8s-deploy-prd-tag:
+  stage: deploy
+  image:
+    name: bitnami/kubectl
+    entrypoint: [""]
+  script:
+    - echo "$KUBECONFIG_PROD" > kubeconfig-prod.yaml
+    - export KUBECONFIG=$PWD/kubeconfig-prod.yaml
+    - sed -i "s#{{CONTAINER_IMAGE}}#$CONTAINER_IMAGE:prd$CI_COMMIT_REF_NAME#g" deployment.yaml
+    - kubectl apply -f deployment.yaml -n $KUBE_NAMESPACE
+  environment:
+    name: dtl-prd-tag
+  only:
+  - tags 
+
+
+  
+
+  

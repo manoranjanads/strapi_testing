@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/school-of-teas",
+      "handler": "school-of-tea.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/school-of-teas/count",
+      "handler": "school-of-tea.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/school-of-teas/:id",
+      "handler": "school-of-tea.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/school-of-teas",
+      "handler": "school-of-tea.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/school-of-teas/:id",
+      "handler": "school-of-tea.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/school-of-teas/:id",
+      "handler": "school-of-tea.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

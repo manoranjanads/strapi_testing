@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/languages-and-countries",
+      "handler": "languages-and-countries.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/languages-and-countries/count",
+      "handler": "languages-and-countries.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/languages-and-countries/:id",
+      "handler": "languages-and-countries.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/languages-and-countries",
+      "handler": "languages-and-countries.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/languages-and-countries/:id",
+      "handler": "languages-and-countries.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/languages-and-countries/:id",
+      "handler": "languages-and-countries.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

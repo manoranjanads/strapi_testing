@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_us_submits",
+  "info": {
+    "name": "Contact Us Submit"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "contact_no": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
+    }
+  }
+}

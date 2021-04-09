@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "media_images_pages",
+  "info": {
+    "name": "Media Images Pages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "page": {
+      "model": "media-images-page-item"
+    }
+  }
+}

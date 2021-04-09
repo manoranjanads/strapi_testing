@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tea-inspiration-pages",
+      "handler": "tea-inspiration-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tea-inspiration-pages/count",
+      "handler": "tea-inspiration-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tea-inspiration-pages/:id",
+      "handler": "tea-inspiration-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tea-inspiration-pages",
+      "handler": "tea-inspiration-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tea-inspiration-pages/:id",
+      "handler": "tea-inspiration-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tea-inspiration-pages/:id",
+      "handler": "tea-inspiration-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

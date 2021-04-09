@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sustainabilities",
+  "info": {
+    "name": "Sustainability",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sliders": {
+      "collection": "small-slider"
+    },
+    "contents": {
+      "collection": "content"
+    },
+    "annual_report": {
+      "model": "content"
+    }
+  }
+}

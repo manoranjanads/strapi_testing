@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dilmah-real-high-tea-pages",
+      "handler": "dilmah-real-high-tea-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dilmah-real-high-tea-pages/count",
+      "handler": "dilmah-real-high-tea-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dilmah-real-high-tea-pages/:id",
+      "handler": "dilmah-real-high-tea-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dilmah-real-high-tea-pages",
+      "handler": "dilmah-real-high-tea-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dilmah-real-high-tea-pages/:id",
+      "handler": "dilmah-real-high-tea-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dilmah-real-high-tea-pages/:id",
+      "handler": "dilmah-real-high-tea-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_us_pages",
+  "info": {
+    "name": "Contact Us Pages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "page": {
+      "model": "contact-us"
+    }
+  }
+}

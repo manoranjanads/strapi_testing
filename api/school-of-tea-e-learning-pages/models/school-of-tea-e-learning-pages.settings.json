@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "school_of_tea_e_learning_pages",
+  "info": {
+    "name": "School Of Tea E-Learning Pages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "page": {
+      "model": "school-of-tea-e-learning"
+    }
+  }
+}

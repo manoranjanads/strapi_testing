@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "time_line_elements",
+  "info": {
+    "name": "Time Line Element",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "year": {
+      "type": "integer"
+    },
+    "title": {
+      "model": "multi-language-item"
+    },
+    "content": {
+      "model": "multi-language-item"
+    },
+    "images": {
+      "collection": "image-item"
+    }
+  }
+}

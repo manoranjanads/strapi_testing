@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ceylon_golden_pekoes",
+  "info": {
+    "name": "Ceylon Golden Pekoe"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "model": "multi-language-item"
+    },
+    "header_image_url": {
+      "type": "string"
+    },
+    "content_1": {
+      "model": "content"
+    }
+  }
+}

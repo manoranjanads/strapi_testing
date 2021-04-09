@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/our-tea-gardens-pages",
+      "handler": "our-tea-gardens-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/our-tea-gardens-pages/count",
+      "handler": "our-tea-gardens-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/our-tea-gardens-pages/:id",
+      "handler": "our-tea-gardens-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/our-tea-gardens-pages",
+      "handler": "our-tea-gardens-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/our-tea-gardens-pages/:id",
+      "handler": "our-tea-gardens-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/our-tea-gardens-pages/:id",
+      "handler": "our-tea-gardens-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

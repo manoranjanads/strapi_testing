@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tea_blog_categories",
+  "info": {
+    "name": "Tea Blog Category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "model": "multi-language-item"
+    }
+  }
+}

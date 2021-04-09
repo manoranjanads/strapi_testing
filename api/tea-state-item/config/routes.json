@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tea-state-items",
+      "handler": "tea-state-item.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tea-state-items/count",
+      "handler": "tea-state-item.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tea-state-items/:id",
+      "handler": "tea-state-item.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tea-state-items",
+      "handler": "tea-state-item.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tea-state-items/:id",
+      "handler": "tea-state-item.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tea-state-items/:id",
+      "handler": "tea-state-item.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

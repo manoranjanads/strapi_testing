@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "certificate_or_awards",
+  "info": {
+    "name": "Certificate Or Award",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "description": {
+      "model": "multi-language-item"
+    },
+    "image_url": {
+      "type": "string"
+    }
+  }
+}

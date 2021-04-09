@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tea_in_all_senses",
+  "info": {
+    "name": "Tea In All Senses"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sliders": {
+      "collection": "small-slider"
+    },
+    "contents": {
+      "collection": "content"
+    }
+  }
+}

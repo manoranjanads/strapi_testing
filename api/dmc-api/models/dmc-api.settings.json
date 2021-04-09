@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dmc_apis",
+  "info": {
+    "name": "DMC API"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "test": {
+      "type": "string"
+    }
+  }
+}

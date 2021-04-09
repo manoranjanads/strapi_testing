@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dilmah-conservation-pages",
+      "handler": "dilmah-conservation-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dilmah-conservation-pages/count",
+      "handler": "dilmah-conservation-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dilmah-conservation-pages/:id",
+      "handler": "dilmah-conservation-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dilmah-conservation-pages",
+      "handler": "dilmah-conservation-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dilmah-conservation-pages/:id",
+      "handler": "dilmah-conservation-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dilmah-conservation-pages/:id",
+      "handler": "dilmah-conservation-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
