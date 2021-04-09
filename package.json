@@ -17,6 +17,7 @@
     "qs": "^6.9.6",
     "strapi": "3.2.5",
     "strapi-admin": "3.2.5",
+    "strapi-cdn-url-rewrite": "^0.1.1",
     "strapi-connector-bookshelf": "3.2.5",
     "strapi-plugin-content-manager": "3.2.5",
     "strapi-plugin-content-type-builder": "3.2.5",
